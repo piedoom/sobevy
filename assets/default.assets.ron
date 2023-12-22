@@ -1,0 +1,5 @@
+({
+    // If we want this to remain web compatible, we need to manually specify files
+    // e.g., `"sfx": Files (paths: ["sfx/1.ogg", "sfx/2.ogg"]),`
+    "settings": File(path: "default.settings.ron"),
+})
