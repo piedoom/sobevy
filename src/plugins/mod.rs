@@ -2,9 +2,6 @@ mod assets;
 mod input;
 mod settings;
 
-use self::settings::SettingsPlugin;
-use crate::prelude::*;
-use assets::*;
 use bevy::{app::PluginGroupBuilder, prelude::*};
 use bevy_wasm_window_resize::WindowResizePlugin;
 
