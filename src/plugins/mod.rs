@@ -23,6 +23,6 @@ impl PluginGroup for ClientPlugins {
 /// Initialize anything else needed for the client
 impl Plugin for ClientInitPlugin {
     fn build(&self, app: &mut App) {
-        app.add_plugins(());
+        app.add_plugins(DefaultPlugins);
     }
 }
