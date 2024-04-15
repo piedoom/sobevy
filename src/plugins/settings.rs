@@ -30,7 +30,7 @@ fn react_to_settings_change(
                 cmd.insert_resource(settings.clone());
 
                 // Adjust the window mode
-                window.for_each_mut(|mut window| {
+                window.iter_mut().for_each(|mut window| {
                     window.mode = settings.window.mode;
                 });
             }

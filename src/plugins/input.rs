@@ -15,7 +15,7 @@ impl Plugin for InputPlugin {
     }
 }
 
-#[derive(Actionlike, PartialEq, Eq, Hash, Clone, Copy, Debug, Reflect)]
+#[derive(Actionlike, PartialEq, Eq, Hash, Clone, Copy, Debug, Reflect, Resource)]
 pub enum Action {
     // Add actions here
 }
