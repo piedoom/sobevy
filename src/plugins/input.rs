@@ -7,9 +7,7 @@ impl Plugin for InputPlugin {
     fn build(&self, app: &mut App) {
         app.init_resource::<ActionState<Action>>()
             .insert_resource(
-                InputMap::<Action>::default()
-                    // Insert the control map here
-                    .build(),
+                InputMap::<Action>::default(), // Insert the control map here
             )
             .add_plugins(InputManagerPlugin::<Action>::default());
     }

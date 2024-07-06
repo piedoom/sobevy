@@ -6,12 +6,11 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-bevy = { version = "0.13", features = ["serialize"], default-features = true }
-bevy_wasm_window_resize = "0.3"
+leafwing-input-manager = { git = "https://github.com/Leafwing-Studios/leafwing-input-manager/" }
+bevy = { version = "0.14", features = ["serialize"], default-features = true }
 serde = "1"
-leafwing-input-manager = "0.13"
-bevy_common_assets = { version = "0.10", features = ["ron"] }
-bevy_asset_loader = { version = "0.20", features = [
+bevy_common_assets = { version = "0.11", features = ["ron"] }
+bevy_asset_loader = { version = "0.21", features = [
     "2d",
     "3d",
     "standard_dynamic_assets",

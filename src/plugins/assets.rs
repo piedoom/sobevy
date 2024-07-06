@@ -16,7 +16,8 @@ impl Plugin for AssetsPlugin {
                     .continue_to_state(AppState::loading())
                     .with_dynamic_assets_file::<StandardDynamicAssetCollection>(
                         "default.assets.ron",
-                    ),
+                    )
+                    .load_collection::<Library>(),
             );
     }
 }
